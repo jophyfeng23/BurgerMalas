@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Burger Malas - Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+            <div class="container-fluid">
+
+                <!-- Logo + Site Name -->
+                <a href="index.html" class="navbar-brand d-flex text-decoration-none">
+                    <img src="assets/img/BurgerMalasLogo.jpg" alt="Burger Malas Logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="location.html">Locations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="franchise.html">Franchise/Licensing</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main class="mainContent mt-3">
+        <div class="container py-5">
+            <!-- Headline -->
+            <div class="text-center mb-5">
+                <h1 class="contactHead">Let's Talk</h1>
+                <p class="mt-3 contactText">Have questions about joining Burger Malas? Want to invest or just hungry for
+                    a
+                    burger? We're just a click away.</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="card shadow-sm p-4">
+                        <h5 class="mb-4 text-center">Send us a message and our team will try get back within 24 hours.
+                        </h5>
+                        <form action="contact_process.php" method="POST" enctype="multipart/form-data" class="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="burger@example.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your message"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="attachment" class="form-label">Attachment (optional)</label>
+                                <input class="form-control" type="file" id="attachment" accept=".jpg,.png,.pdf,.docx">
+                            </div>
+
+                            <div class="mb-3">
+                                <!-- Google reCAPTCHA -->
+                                <div class="g-recaptcha" data-sitekey="6Ld0SQcsAAAAAEVR4qjF4kkwlu6wYn22XCvV2OMf"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit & Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer id="footer">
+        <div class="footerContent py-5">
+            <div class="container">
+                <div class="row text-center text-md-start">
+
+                    <!-- Left Column (3) Empty -->
+                    <div class="col-12 col-md-3"></div>
+
+                    <!-- Center Column (6) - Follow Us -->
+                    <div class="col-12 col-md-6 followUs mb-4 mb-md-0 text-center">
+                        <h4 class="mb-3">Follow Us</h4>
+                        <p class="mb-3">Stay updated with our latest foods, promos, and new branches!</p>
+
+                        <div class="social-links d-flex justify-content-center gap-3">
+                            <a href="https://www.facebook.com/profile.php?id=61575679090435" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/burgermalashq/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@burgermalashq?is_from_webapp=1&sender_device=pc"
+                                target="_blank">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </div>
+
+                        <p class="mt-3">&copy; 2025 Burger Malas. All Rights Reserved.</p>
+                    </div>
+
+                    <!-- Right Column (3) - Quick Link -->
+                    <div
+                        class="col-12 col-md-3 quickLink d-none d-md-flex flex-column align-items-md-start text-md-start">
+                        <h5 class="mb-3">Quick Link</h5>
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="location.html">Locations</a>
+                        <a href="franchise.html">Franchise Information</a>
+                        <a href="contactus.html">Contact Us</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function () {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop && currentScroll > 80) {
+                navbar.classList.add('hidden');
+            } else {
+
+                navbar.classList.remove('hidden');
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
