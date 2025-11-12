@@ -569,7 +569,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/img/1.PNG'); 
+  background-image: url('../assets/img/1.png'); 
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -996,7 +996,7 @@ address {
 
 
   .franchise-hero .bg-image {
-  background-image: url('../assets/img/1.PNG'); 
+  background-image: url('../assets/img/1a.png'); 
 
 }
 
@@ -1076,6 +1076,7 @@ address {
 
 
 }
+
 
 
 
