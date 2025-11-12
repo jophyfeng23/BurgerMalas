@@ -118,7 +118,11 @@ body {
   animation: fadeInUp 1s ease forwards;
 }
 
-
+.mainContent > .franchise-hero {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
 
 /* Intro Section */
 
@@ -1072,4 +1076,5 @@ address {
 
 
 }
+
 
