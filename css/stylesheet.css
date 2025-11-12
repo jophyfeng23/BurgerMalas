@@ -1037,7 +1037,7 @@ address {
   }
 
   .introHead {
-    background-image: url("/assets/img/2a.PNG");
+    background-image: url("../assets/img/2a.PNG");
   }
 
   .introHead h1 {
@@ -1076,6 +1076,7 @@ address {
 
 
 }
+
 
 
 
