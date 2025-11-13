@@ -729,6 +729,21 @@ address {
   }
 }
 
+.contact-btn-container a {
+  text-decoration: none;
+  padding: 10px 40px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+  min-width: 220px;
+}
+
+.contact-btn-container a:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
 /* =============================== */
 
 /* === Footer === */
@@ -1142,6 +1157,7 @@ address {
 
 
 }
+
 
 
 
