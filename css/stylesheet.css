@@ -329,6 +329,11 @@ body {
 
 }
 
+.star-rating i {
+  color: #ffbb00; 
+  margin-right: 5px; 
+}
+
 .review-header img,
 .story-header img {
   width: 48px;
@@ -1171,3 +1176,4 @@ address {
 
 
 }
+
