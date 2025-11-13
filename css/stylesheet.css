@@ -489,7 +489,7 @@ address {
 }
 
 .expansion-image {
-  max-width: 45%;
+  max-width: 50%;
   height: auto;
   border-radius: 15px;
   transition: transform 0.3s ease;
@@ -500,11 +500,28 @@ address {
 }
 
 .expansion-text {
-  font-size: clamp(16px, 1.2vw, 20px);
+  font-size: clamp(15px, 1.2vw, 19px);
   line-height: 2.2;
   color: #000;
   text-align: center;
+  
 }
+
+.btn-franchise{
+  background-color: #ffa034;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-franchise:hover {
+  background-color: #e75c00cc;
+  color: white;
+  transform: scale(1.03);
+}
+
 
 .photo-credit {
   font-size: 0.85rem;
@@ -523,10 +540,38 @@ address {
 }
 
 
+
 .photo-credit a:hover {
   text-decoration: underline;
 
 }
+
+.foodpanda-collab {
+  border-top: 2px solid #000000;
+}
+
+.foodpanda{
+  color: #d70f64;
+}
+
+
+.btn-panda {
+  background-color: #ff347f;
+  color: white;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-panda:hover {
+  background-color: #e02470;
+  color: white;
+  transform: scale(1.03);
+}
+
+
+
 
 
 
@@ -1097,6 +1142,7 @@ address {
 
 
 }
+
 
 
 
