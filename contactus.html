@@ -64,7 +64,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
                     <div class="card shadow-sm p-4">
-                        <h5 class="mb-4 text-center">Send us a message and our team will try get back within 24 hours.
+                        <h5 class="mb-4 text-center">Send us a message and our team will try to get back within 24 hours.
                         </h5>
                         <form action="contact_process.php" method="POST" enctype="multipart/form-data" class="contactForm">
                             <div class="mb-3">
@@ -167,7 +167,25 @@
 
 
     </script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault(); 
 
+            let formData = new FormData(this);
+
+            fetch("contact_process.php", {
+                method: "POST",
+                body: formData
+            })
+                .then(response => response.text())
+                .then(result => {
+                    alert(result);  // Show success message from PHP
+                })
+                .catch(error => {
+                    alert("Error: " + error);
+                });
+        });
+    </script>
 
 
 
@@ -175,5 +193,6 @@
 
 
 </html>
+
 
 
