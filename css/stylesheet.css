@@ -785,11 +785,34 @@ address {
   color: black;
 }
 
-.footerContent p {
+
+.followUs,.quickLink p {
   margin-bottom: 20px;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
 
+}
+
+.footerContact{
+  border-right: 1px solid black;
+  
+}
+
+.footerContact a{
+
+  font-size: 17px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+.footerContact a:hover{
+  color: #aa1c1c;
+}
+
+.footerContact .icon{
+  font-size: 22px;
+  
 }
 
 .footerContent .social-links a {
@@ -810,7 +833,7 @@ address {
   align-items: flex-start;
   text-align: left;
   gap: 8px;
-  padding-left: 20px;
+  padding-left: 100px;
   border-left: 1px solid black;
 }
 
@@ -872,6 +895,12 @@ address {
     font-size: 18px;
     margin-right: 25px;
   }
+
+  .quickLink {
+  padding-left: 30px;
+  
+}
+
 
 
 }
@@ -963,7 +992,9 @@ address {
     font-size: 14px;
   }
 
-
+.footerContact a{
+  font-size: 13px;
+}
 
 
 }
@@ -1177,6 +1208,7 @@ address {
 
 
 }
+
 
 
 
