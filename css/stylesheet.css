@@ -46,10 +46,14 @@ body {
   width: 150px;
   height: 140px;
   margin-left: 60px;
-  border: 2px solid black;
-  border-radius: 10px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
+
+.navbar-brand img:hover {
+    transform: scale(1.08);
+}
+
 
 .navbar-toggler {
   background-color: transparent;
@@ -1208,6 +1212,7 @@ address {
 
 
 }
+
 
 
 
