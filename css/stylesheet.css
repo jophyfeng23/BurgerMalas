@@ -730,7 +730,7 @@ address {
   font-size: 2rem;
   display: block;
   margin-bottom: 15px;
-  color: #ff7f50;
+ color: #ff3535;
 }
 
 @keyframes fadeInText {
@@ -1212,6 +1212,7 @@ address {
 
 
 }
+
 
 
 
