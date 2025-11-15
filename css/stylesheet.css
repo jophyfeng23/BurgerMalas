@@ -638,7 +638,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: rgb(235, 167, 91);
   text-align: center;
 }
 
@@ -1212,6 +1212,7 @@ address {
 
 
 }
+
 
 
 
