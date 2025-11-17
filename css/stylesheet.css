@@ -31,7 +31,7 @@ body {
   width: 100%;
   z-index: 1000;
   transition: top 0.4s ease-in-out;
-  background-color: rgb(240, 216, 188);
+  background-color: rgb(241, 186, 114);
   border-bottom: 1px solid black;
   opacity: 1;
   transition: top 0.4s ease, opacity 0.4s ease;
@@ -166,9 +166,9 @@ body {
 
 .introHead h1 {
   margin-bottom: 5%;
-  font-size: clamp(36px, 3vw, 75px);
+  font-size: clamp(36px, 4vw, 65px);
   font-weight: 800;
-  color: rgb(240, 189, 132);
+  color: rgb(233, 157, 69);
   text-shadow:
     0 0 5px #000000;
   letter-spacing: 1px;
@@ -180,11 +180,10 @@ body {
 }
 
 .introHead h6 {
-  font-size: clamp(15px, 4vw, 24px);
+  font-size: clamp(15px, 4vw, 25px);
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: #ffffff;
-  opacity: 0.9;
   line-height: 1.6;
   animation: fadeInUp 1.5s ease both;
 }
@@ -244,7 +243,7 @@ body {
 .intro {
   padding: 40px 0px;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2.0;
   color: black;
 
@@ -915,7 +914,7 @@ address {
 @media (max-width: 991px) {
 
   .introHead h1 {
-    font-size: clamp(26px, 5vw, 60px);
+    font-size: clamp(26px, 6vw, 60px);
     letter-spacing: 0.5px;
   }
 
@@ -1178,7 +1177,7 @@ address {
   }
 
   .introHead h1 {
-    font-size: clamp(22px, 5vw, 32px);
+    font-size: clamp(25px, 6vw, 35px);
     white-space: nowrap;
   }
 
@@ -1212,6 +1211,7 @@ address {
 
 
 }
+
 
 
 
