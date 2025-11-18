@@ -1117,7 +1117,8 @@ address {
   }
 
   .expansion-text {
-    text-align: center;
+    text-align: left;
+    line-height: 2.5;
   }
 
 
@@ -1228,6 +1229,7 @@ address {
 
 
 }
+
 
 
 
