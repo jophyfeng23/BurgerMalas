@@ -654,8 +654,14 @@ address {
   justify-content: center;
   color: rgb(235, 167, 91);
   text-align: center;
-}
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 
+    letter-spacing: 0.8px;
+}
 
 .franchise-hero .bg-image {
   position: absolute;
@@ -663,7 +669,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/img/1.png');
+  background-image: url('/assets/img/1a.PNG');
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -700,8 +706,8 @@ address {
   margin-bottom: 2rem;
 }
 
-.content .content-text{
-  color:  #ec1111;
+.content .content-text {
+  color: #ec1111;
 }
 
 .franchise-hero p {
@@ -724,6 +730,12 @@ address {
   color: #ec1111;
 }
 
+.why-join {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
 .why-join {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1239,6 +1251,7 @@ address {
 
 
 }
+
 
 
 
