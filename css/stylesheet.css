@@ -302,7 +302,9 @@ body {
   padding: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
-
+  .reviewsAndStory p{
+  font-size: 18px;
+}
 /* === Box Styling === */
 .reviews-section,
 .storyBox {
@@ -905,6 +907,14 @@ address {
     padding: 0 15px;
   }
 
+   .readMoreButton {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+
+
   .navbar-brand img {
     width: 140px;
     height: 130px;
@@ -987,12 +997,16 @@ address {
     padding: 0 10px;
   }
 
-
+  .reviewsAndStory p{
+  font-size: 14px;
+}
 
 
   .readMoreButton {
-    font-size: 15px;
-    margin-left: 0;
+    width: 40%;
+    text-align: center;
+    display: block;
+    margin: 30px auto 0 auto;
   }
 
 
@@ -1205,12 +1219,7 @@ address {
   }
 
 
-.readMoreButton {
-    width: 40%;
-    text-align: center;
-    display: block;
-    margin: 30px auto 0 auto;
-  }
+
 
   .footerContent h4 {
     font-size: 18px;
@@ -1230,6 +1239,7 @@ address {
 
 
 }
+
 
 
 
