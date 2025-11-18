@@ -183,7 +183,7 @@ body {
   font-size: clamp(15px, 4vw, 25px);
   font-weight: 400;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #ff0000;
   line-height: 1.6;
   animation: fadeInUp 1.5s ease both;
 }
@@ -1215,6 +1215,7 @@ address {
 
 
 }
+
 
 
 
