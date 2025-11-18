@@ -280,7 +280,7 @@ body {
   font-weight: 600;
   border: 2px solid black;
   border-radius: 8px;
-  padding: 6px 18px;
+  padding: 3px 30px;
   transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -1205,10 +1205,11 @@ address {
   }
 
 
-  .readMoreButton {
-    width: 100%;
+.readMoreButton {
+    width: 40%;
     text-align: center;
-    padding: 10px 0;
+    display: block;
+    margin: 30px auto 0 auto;
   }
 
   .footerContent h4 {
@@ -1229,6 +1230,7 @@ address {
 
 
 }
+
 
 
 
