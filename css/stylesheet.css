@@ -1074,8 +1074,8 @@ address {
 
   .story-photos img,
   .reviewPhoto {
-    width: 200px;
-    height: 190px;
+    width: 250px;
+    height: 240px;
     object-fit: cover;
     border-radius: 6px;
     margin: 6px 0px;
@@ -1230,6 +1230,7 @@ address {
 
 
 }
+
 
 
 
