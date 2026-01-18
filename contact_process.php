@@ -19,11 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Recaptcha verification failed. Please try again.");
     }
 
-    $name = trim($_POST['name'] ?? '');
-    $email = trim($_POST['email'] ?? '');
-    $subject = trim($_POST['subject'] ?? 'No Subject');
-    $message = trim($_POST['message'] ?? '');
-
+    $name = htmlspecialchars(trim($_POST['name'] ?? ''));
+    $email = htmlspecialchars(trim($_POST['email'] ?? ''));
+    $subject = htmlspecialchars(trim($_POST['subject'] ?? 'No Subject'));
+    $message = htmlspecialchars(trim($_POST['message'] ?? ''));
     $mail = new PHPMailer(true);
 
     try {
@@ -59,4 +58,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Mailer Error: " . $mail->ErrorInfo;
     }
 }
+
 
