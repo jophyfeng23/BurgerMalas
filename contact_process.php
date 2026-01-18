@@ -9,7 +9,7 @@ require 'PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $recaptcha_secret = 'YOUR_SECRET_KEY_FROM_GOOGLE_CONSOLE'; // <--- PUT SECRET KEY HERE
+    $recaptcha_secret = '6Ld0SQcsAAAAALgzmXjS1rY_M62KGrBIz6PmRdNG'; // <--- PUT SECRET KEY HERE
     $recaptcha_response = $_POST['g-recaptcha-response'] ?? '';
 
     $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$recaptcha_secret.'&response='.$recaptcha_response);
@@ -58,5 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Mailer Error: " . $mail->ErrorInfo;
     }
 }
+
 
 
