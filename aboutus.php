@@ -1,10 +1,10 @@
 <?php include 'partials/header.php'; ?>
 
 
-
-    <div class="mainContent">
-        <div class="container text-center mt-5">
-            <h1>Who We Are</h1><br>
+<main class="mainContent mt-5 pb-5">
+   
+        <div class="container text-center pt-4">
+            <h1 class="fw-bold text-dark mb-3">Who We Are</h1><br>
             <section id="about" class="py-5">
                 <div class="container">
                     <div class="row align-items-center">
@@ -219,6 +219,7 @@
 
 </body>
 </html>
+
 
 
 
