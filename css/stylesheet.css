@@ -414,51 +414,96 @@ body {
 
 
 /* === Location Page === */
-.stateHeader {
-  text-align: center;
+.nav-pills-custom .nav-link {
+color: #000000;
+border: 1px solid #000000;
+border-radius: 30px;
+padding: 10px 30px;
+font-weight: 600;
+transition: all 0.3s ease;
+margin: 0 5px;
 }
 
-.stateBranches li {
-  font-size: 16px;
-  border-top: 2px solid black;
-  padding: 20px;
-  margin-bottom: 20px;
-  list-style: none;
+.nav-pills-custom .nav-link:hover {
+border-color: #d35400;
+background-color: #fff7f0;
+box-shadow: 0 2px 4px rgba(121, 121, 121, 0.3);
+transform: translateY(-5px);
+
 }
 
-.stateBranches .whatsappButton {
-  margin-left: 20px;
+.nav-pills-custom .nav-link.active {
+background-color: transparent;
+color: #fff;
+border-color: #d35400;
+box-shadow: 0 4px 8px rgba(94, 62, 42, 0.3);
 }
 
-.foodpanda-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-weight: 400;
-  margin-left: 20px;
-  border: 1px solid #d70f64;
-  white-space: nowrap; 
+    /* Minimalist Cards */
+.clean-card {
+background: #ffffff;
+border: none;
+border-radius: 16px;
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+height: 100%;
+padding: 30px;
 }
 
-.foodpanda-btn:hover {
-  background-color: #ffecec;
-  color: black;
-  border: 1px solid black;
+.clean-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);}
+
+
+.info-row {
+display: flex;
+align-items: flex-start;
+margin-bottom: 12px;
+color: #000000;
+font-size: 0.95rem;
 }
 
+.info-row i {
+color: #d35400;
+font-size: 1.1rem;
+margin-right: 12px;
+margin-top: 2px;      
 
-address {
-  font-family: Arial, sans-serif;
-  color: #333;
-  font-style: normal;
-  line-height: 1.5;
 }
 
+/* Button Styling */
+.action-row {
+margin-top: 25px;
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.btn-clean {
+border-radius: 8px;
+font-weight: 500;
+padding: 8px 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+flex: 1;
+min-width: 120px;
+      
+}
+
+.btn-fp {
+background-color: white;
+color: black;
+border: 1px solid #d70f64;
+}
+
+.btn-fp:hover {
+background-color: #ffb0d1;
+color: black;
+border: 1px solid black;
+transition: 0.3s ease;
+}
 /* ======= aboutus.html ==========*/
 
 .mission_vision {
@@ -1251,6 +1296,7 @@ address {
 
 
 }
+
 
 
 
