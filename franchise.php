@@ -1,36 +1,5 @@
 <?php include 'partials/header.php'; ?>
 
-<body>
-
-    <div id="header">
-        <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
-            <div class="container-fluid">
-
-                <!-- Logo + Site Name -->
-                <a href="index.html" class="navbar-brand d-flex text-decoration-none">
-                    <img src="assets/img/BurgerMalasLogo1.png" alt="Burger Malas Logo">
-                </a>
-
-                <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Menu -->
-                <div class="collapse navbar-collapse" id="mainNavbar">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="location.html">Locations</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="franchise.html">Franchise/Licensing</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
 
     <main class="mainContent">
         <section class="franchise-hero">
@@ -185,6 +154,7 @@
 
 
 </html>
+
 
 
 
