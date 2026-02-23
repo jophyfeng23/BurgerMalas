@@ -1,12 +1,13 @@
 <?php include 'partials/header.php'; ?>
 
 
-    <main class="mainContent mt-3">
-        <div class="container py-5">
+
+    <main class="mainContent mt-5 pb-5">
+        <div class="container pt-4">
             <!-- Headline -->
             <div class="text-center mb-5">
-                <h1 class="contactHead">Let's Talk</h1>
-                <p class="mt-3 contactText">Have questions about joining Burger Malas? Want to invest or just hungry for
+                <h1 class="fw-bold text-dark mb-3">Let's Talk</h1>
+                <p class="mt-3 subText">Have questions about joining Burger Malas? Want to invest or just hungry for
                     a
                     burger? We're just a click away.</p>
             </div>
@@ -17,7 +18,7 @@
                     <div class="card shadow-sm p-4">
                         <h5 class="mb-4 text-center">Send us a message and our team will try to get back within 24 hours.
                         </h5>
-                        <form action="contact_process.php" method="POST" enctype="multipart/form-data" class="contactForm" id="contactForm>
+                        <form action="contact_process.php" method="POST" enctype="multipart/form-data" class="contactForm" id="contactForm">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
@@ -39,7 +40,7 @@
                                 <input class="form-control" type="file" id="attachment" name="attachment" accept=".jpg,.png,.pdf,.docx">
                             </div>
                             <div class="mb-3">
-                                <div class="g-recaptcha" data-sitekey="6Ld0SQcsAAAAAEVR4qjF4kkwlu6wYn22XCvV2OMf"></div>
+                                <div class="g-recaptcha" data-sitekey="6LfFc3MsAAAAAFk0GJKYWsB12Gcp4Yv533RD5BMv"></div>
                             </div>
                             <button type="submit" class="btn btn-primary w-100 submitbtn">Submit & Send</button>
                         </form>
@@ -49,84 +50,30 @@
         </div>
     </main>
 
+    
 
+    <?php include 'partials/footer.php'; ?>
 
-
-    <footer id="footer">
-        <div class="footerContent py-5">
-            <div class="container">
-                <div class="row text-center text-md-start">
-
-                    <!-- Left Column (3) Empty -->
-                    <div class="col-12 col-md-3 footerContact d-none d-md-block text-center text-md-start">
-                      
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=burgermalas25@gmail.com&su=Franchise%20Inquiry&body=Hi%20Burger%20Malas%20Team,%0D%0A%0D%0AI%20am%20interested%20in%20franchise%20opportunities."
-                           target="_blank"><i class="bi bi-envelope-at icon"></i> burgermalas25@gmail.com</a>
-                        <br><br>
-
-                        <a href="tel:+60178664655"><i class="bi bi-telephone icon"></i> +60 17-866 4655</a>
-                    </div>
-                    <!-- Center Column (6) - Follow Us -->
-                    <div class="col-12 col-md-6 followUs mb-4 mb-md-0 text-center">
-                        <h4 class="mb-3">Follow Us</h4>
-                        <p class="mb-3">Stay updated with our latest foods, promos, and new branches!</p>
-
-                        <div class="social-links d-flex justify-content-center gap-3">
-                            <a href="https://www.facebook.com/profile.php?id=61575679090435" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/burgermalashq/" target="_blank">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@burgermalashq?is_from_webapp=1&sender_device=pc"
-                                target="_blank">
-                                <i class="bi bi-tiktok"></i>
-                            </a>
-                        </div>
-
-                        <p class="mt-3">&copy; 2025 Burger Malas. All Rights Reserved.</p>
-                    </div>
-
-                    <!-- Right Column (3) - Quick Link -->
-                    <div
-                        class="col-12 col-md-3 quickLink d-none d-md-flex flex-column align-items-md-start text-md-start">
-                        <h5 class="mb-3">Quick Link</h5>
-                        <a href="index.html">Home</a>
-                        <a href="aboutus.html">About Us</a>
-                        <a href="location.html">Locations</a>
-                        <a href="franchise.html">Franchise Information</a>
-                        <a href="contactus.html">Contact Us</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        let lastScrollTop = 0;
-        const navbar = document.querySelector('.navbar');
-
-        window.addEventListener('scroll', function () {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (currentScroll > lastScrollTop && currentScroll > 80) {
-                navbar.classList.add('hidden');
-            } else {
-
-                navbar.classList.remove('hidden');
-            }
-
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        });
-
-
-
-    </script>
+   
     <script>
         document.getElementById("contactForm").addEventListener("submit", function (e) {
             e.preventDefault(); 
+
+            // 1. Frontend validation: Check if ReCAPTCHA is completed
+            let recaptchaResponse = grecaptcha.getResponse();
+            if (recaptchaResponse.length === 0) {
+                alert("Please complete the reCAPTCHA challenge before submitting.");
+                return; // Stop the function here
+            }
+
+            const btn = document.querySelector(".submitbtn");
+            const originalText = btn.innerHTML;
+
+            // 2. UI Loading State (Optional but recommended)
+            btn.disabled = true;
+            btn.innerHTML = 'Sending...';
 
             let formData = new FormData(this);
 
@@ -134,13 +81,24 @@
                 method: "POST",
                 body: formData
             })
-                .then(response => response.text())
-                .then(result => {
-                    alert(result);  // Show success message from PHP
-                })
-                .catch(error => {
-                    alert("Error: " + error);
-                });
+            .then(response => response.text())
+            .then(result => {
+                alert(result);  // Show success message from PHP
+                
+                // Clear the form and reset recaptcha if successful
+                if(result.includes("Thank you")) {
+                    this.reset();
+                    grecaptcha.reset(); 
+                }
+            })
+            .catch(error => {
+                alert("Error: " + error);
+            })
+            .finally(() => {
+                // Restore Button State
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            });
         });
     </script>
 
@@ -150,7 +108,6 @@
 
 
 </html>
-
 
 
 
