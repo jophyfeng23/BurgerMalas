@@ -422,6 +422,7 @@ padding: 10px 30px;
 font-weight: 600;
 transition: all 0.3s ease;
 margin: 0 5px;
+
 }
 
 .nav-pills-custom .nav-link:hover {
@@ -442,7 +443,7 @@ box-shadow: 0 4px 8px rgba(94, 62, 42, 0.3);
     /* Minimalist Cards */
 .clean-card {
 background: #ffffff;
-border: none;
+border: 1px solid black;
 border-radius: 16px;
 box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1296,6 +1297,7 @@ transition: 0.3s ease;
 
 
 }
+
 
 
 
