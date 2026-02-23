@@ -9,7 +9,7 @@ require 'PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $recaptcha_secret = '6Ld0SQcsAAAAALgzmXjS1rY_M62KGrBIz6PmRdNG'; // <--- PUT SECRET KEY HERE
+    $recaptcha_secret = '6LfFc3MsAAAAAB5dk50kt6PGusp5bvDW8fSANci5'; 
     $recaptcha_response = $_POST['g-recaptcha-response'] ?? '';
 
     $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$recaptcha_secret.'&response='.$recaptcha_response);
@@ -23,7 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars(trim($_POST['email'] ?? ''));
     $subject = htmlspecialchars(trim($_POST['subject'] ?? 'No Subject'));
     $message = htmlspecialchars(trim($_POST['message'] ?? ''));
+
+
+
+
     $mail = new PHPMailer(true);
+
 
     try {
         $mail->isSMTP();
