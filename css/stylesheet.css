@@ -665,11 +665,12 @@ transition: 0.3s ease;
 
 }
 
-.contactText {
-  font-size: clamp(16px, 1.2vw, 25px);
+.subText {
+  font-size: 22px;
   line-height: 1.8;
   color: #d35400;
 }
+
 
 .card form label {
   font-weight: 500;
@@ -1297,6 +1298,7 @@ transition: 0.3s ease;
 
 
 }
+
 
 
 
